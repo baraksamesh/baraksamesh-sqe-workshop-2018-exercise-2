@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <style id="myStyle">
+            table {
+                width: 100%;
+                height: 100%;
+            }
+
+            .textAreaWrapper {
+                width: 100%;
+                height: 40vh;
+            }
+
+            textarea {
+                width: 80%;
+                height: 95%;
+            }
+			
+			#td2 {
+				white-space: pre-wrap;				
+			}
+			#vector {
+				height: 5%;		
+			}
+			
+			green{
+				background-color: #43FC29;
+			}
+			
+			red{
+				background-color: #FF3333;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <table>
+		<col width = "300">
+            <tr>
+                <td>
+                    <div>
+                        <label>Enter code here</label>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <label>Parsed code here</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="textAreaWrapper">
+                        <textarea id="codePlaceholder" title="Enter code here" >
+function foo(x, y, z){
+    if(x){}
+}
+
+
+</textarea>
+                    </div>
+					<div id = "vector" class="textAreaWrapper">
+                        <textarea id="vectorPlaceholder" title="Enter vector here" >1;2;3</textarea>
+                    </div>
+                </td>
+                <td>
+                    <div class="textAreaWrapper">
+                        <textarea id="parsedCode" title="Parse code" width="50"></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <button id="codeSubmissionButton">Parse code</button>
+						<button id="substitutionButton">Substitute code</button>
+                    </div>
+                </td>
+                <td>
+                </td>
+            </tr>
+			<tr>
+				<td id="td2">
+				</td>
+				<td id="td1" width="400">
+				</td>
+			</tr>
+        </table>
+
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
